@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            position: absolute;
+            transition: opacity 1s ease-in-out;
+        }
+
+        li img {
+            width: 40vw;
+            height: 25vw;
+            display: block;
+        }
+
+        li span {
+            display: block;
+            width: 40vw;
+            height: 3vw;
+            line-height: 3vw;
+            text-align: center;
+            font-size: 2vw;
+            font-weight: 600;
+            color: #fff;
+            background: #999;
+        }
+    </style>
+</head>
+<body>
+<ul id="pictures">
+    <li>
+        <img src="img/img_001.jpg" alt="">
+        <span>标题一</span>
+    </li>
+    <li>
+        <img src="img/img_002.jpg" alt="">
+        <span>标题二</span>
+    </li>
+    <li>
+        <img src="img/img_003.jpg" alt="">
+        <span>标题三</span>
+    </li>
+    <li>
+        <img src="img/img_004.jpg" alt="">
+        <span>标题四</span>
+    </li>
+    <li>
+        <img src="img/img_005.jpg" alt="">
+        <span>标题五</span>
+    </li>
+</ul>
+<script src="js/autoPlay.js"></script>
+<script>
+    autoPlay('pictures', 'li');
+</script>
+</body>
+</html>
